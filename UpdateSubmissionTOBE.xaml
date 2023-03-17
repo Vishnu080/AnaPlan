@@ -1,0 +1,144 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="UpdateSubmissionTOBE" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="712.6666666666666,1588" sap2010:WorkflowViewState.IdRef="UpdateSubmissionTOBE_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="48">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="UpdateSubmissionTOBE" sap:VirtualizedContainerService.HintSize="496,1523.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: 1. Create &amp; Update Node - Bulk | Anaplan" sap:VirtualizedContainerService.HintSize="434,1412.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="cdb12a85-b27d-4ec8-ae9c-23330d578d5c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,1193.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="sampleNode">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">AUTO_TESTNODE2</Literal>
+                </Variable.Default>
+              </Variable>
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click '1. Create'" sap:VirtualizedContainerService.HintSize="338,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cdb12a85-b27d-4ec8-ae9c-23330d578d5c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://us1a.app.anaplan.com/a/springboard-ui/app/b40dda58-9637-4a73-8654-249bb11cfe0d/boards/a5484b43-2c2c-4b34-bab2-4f4a5126bf8d" DesignTimeRectangle="29, 265, 24, 24" DesignTimeScaleFactor="1.5" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl tag='svg' type='' class='axis-icon' aaname='' /&gt;" Guid="be7ba53c-8425-45ed-b023-79de5b9f163f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACFSURBVEhL7dWxCYAwEIVhx3MAh3E2GxdwELFwhcgTA2mEu/cuIUV+uCbNx8FBptS4AYY3QFPbfrxjSQYBzcv6znnd3+t/Elhi1TdkMESBLIbcoIIhF6hiyAxGYMgERmGoTxBFof0eTU5F3SBSUApELEqDiEElEJVo9e8pB7TZht4GGFxKD/2D3lwyMfriAAAAAElFTkSuQmCC" InformativeScreenshot="85a25cf2410ad8b5e22bea774bde8762.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1. Create &amp;amp; Update Node - Bulk | Anaplan' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="83, 263, 373, 32" ElementType="Text" FriendlyName="'1. Create'" FullSelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl class='inline-page-title' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl class='inline-page-title' tag='SPAN' type='' aaname='1. Create &amp;amp; Update Node - Bulk' check:innerText='1. Create &amp;amp; Update Node - Bulk' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="cdb12a85-b27d-4ec8-ae9c-23330d578d5c" Text="[sampleNode]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://us1a.app.anaplan.com/a/springboard-ui/app/b40dda58-9637-4a73-8654-249bb11cfe0d/worksheets/351a1dcf-2ae5-49af-8f73-e37cd054be69" DesignTimeRectangle="23, 335, 285, 59" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='search' class='input search-input__input' aaname='' /&gt;" Guid="6157ca9a-2c2d-4f62-b7f9-c372802bd330" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASEAAAA/CAYAAACvtn5EAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAARmSURBVHhe7dzPaxRnHMfx/jG99tDe2otHc6i5xB5ig9VCaW1KxUJVZA9rg9AcqjSQUOzB0O0hB0GMGNKCHowE3YDRIqmH9NCipJFQqQhiI3w7n9mZ9cn+wp1M5rtk3y942GT22dHTm3memc0bBgCOiBAAV0QIgCsiBMAVEQLgiggBcEWEALgiQgBcESEArogQAFdECIArIgTAFREC4IoIAXBFhAC4IkIAXBEhAK6IEABXRAiAKyIEwNWORejfp8/s9tJvNjH1c/yq3wGgUa4RUmiOHD1te/Z+ZG++NdA0dPx46TuCBKAutwj9em3R3nlvqGV8GofmaT4A5BKhz7483RSat98dsgOHv7bvpyrxq35vnKOrJgD9bdsRUmTCsLy//3Nb+f2P5N2tdFzvh/P1eQD9a1sRulW9lykojeHSeYqyNnfWBvaf7Dgm4//Ous1/U7KBkQmbfxx/NCfrNntK/07F7iZHgH6WOULaXA43oLUk60a4hNN5itqsTiN06IcbVl1abjlWn2hmFItSFIvhCZslQsCOyRwhbSynEdF+T7cR0fxwn6iojeo0Qsfm1pMjRSNCQChzhMIlVdZ9nTzO0a1uInT3vGJxtn4llH528s4/Vp2Zsk8O6/1ojJyx8bk/rSnDG8s2/e0ZG9ScaAx9dcFmV1ftIhEC6jJHSHe80oBk3dMJ95R0viLkEaHB4WicqNjsQrR8W7hqY5/WIjN+e7M2UZ4s2tiIjpdsdLq29JuPwnVIn40GEQJqMkcoXEpl3c/R59Jz6NmhIqQhab8n9MDWntfmtovQ8Pn7W6967lXiq52hn1aTA2Yr0+V47vhicrLU2nU7RoSAup6JkM5XhDQk7cer6LRdjjVe+D2OwqLPRnGqeWCTCs0XV+2v5Mgr7AkBIZZjHWSOUFOUQkQICLEx3QERAnZe5giFt+i1n9Ptkkzzw++a9eIt+swRenmf5RjwmjJHSBHZs/dgPSLdfg9s68OKBzPvK3WrkAjZpt2c0GfLdu5Ow8b0xpKNx7f2wwht2otnwZ01+e+5vXiZ/BxrMQfYBTJHSMI9HQ397aDXES7DNLLuKWVRTIQiOhbfBSvbiZlOt+g3rTpZis87euVRfMQe/mKjmjNSsWrcsBZzgF1iWxGSxqDs+6DzF1j1fji/qL2gVGERko1l+7Fcrj+sOHi09cOKKzN6oLFkYwtPaweSZ4wGj1y2leRqqGkOsEtsO0LS6k95aL/nw4+Px1dHeg33f9KRft9McSpqOQagt+QSIdHGcvjsUKeheelGtAKkQOkKiRAB/Se3CMnDR3/HVzfhhnU4dFzvh7EJnzciRED/yTVCIcVEG87a89Fru7joePiHzggR0F92LELdaAzRhcql5B0Au11PREgUIi3NtGTTsg5Af+iZCAHoT0QIgCsiBMAVEQLgiggBcEWEALgiQgBcESEArogQAFdECIArIgTAFREC4IoIAXBFhAC4IkIAXBEhAK6IEABXRAiAKyIEwJHZ/3G7gUfcxkXpAAAAAElFTkSuQmCC" InformativeScreenshot="dda1db9cdc230071052972c48f14485d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1.2. Execution (Direct) | Anaplan' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="338,222" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(down)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3" />
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="Delay_3" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIVSURBVFhH7ZYxSFVhFMefEb7iQaCDLWGhEARCUINTaETg1tKoSILg1uKUQ0FQ4eJSS0jgGoRKtLi1tRRouLS0RFCiCEUYpPX7Xv/v63Y897537dLkH37w3vl+5xx49737bu0wZdLom3wFPwtYllp9GH7RLPO4Ir36MHzBLLOsQ4f0asPgHviuRXlMSa8+DL9lllm2oCG92jD4KHzQojxmpadQ69fLfwuDrmcWeezCGenN8L4DVuGkSgcPQ16CtziyKDWF2lWd3VHpYGHAeQ0q4rL0FGpLOvsMdZXLh+bHGpTHW6kp1HohXJboTOioXGjshm+ZQR6T0lOo3TfOmo7KhcZpM8iyCcelN8P7OoSP3brl7pA0HIH3mQEeD6SnUBs1TuS5lPZCwzUzwPIDeqWnUMv7s9qDs9JaB3kl0+zxTGoKtQvGsTyUWhzEc6bRY0h6CrUnxrF8hS7p+UF6lGnyWJX6V6gPwnALuqX7QTgBX8BbHLkhvfow/KZZZtmAY9KrDYPDH8g7LcrjnvTqw/ARs8wSfnqnpLvh/DSEZ4PtFgyo5U8ovgBvceSp1MLgLZs+j3npv0OhH8LNwpMjl6QXBi98273+LDvQo5Zm01zm0OO11LaC/8b0e9yOcgPCdfGkyHhTbjP4Y6bf4xPUgzyVKXqUfqjA74SP6i9iIsjhed47jNzV3FKhb8bM8dj3QHOY/5xa7Remrz12jj3pzgAAAABJRU5ErkJggg==" InformativeScreenshot="a8da80aebb63f12576c8ff4d15722388.jpg" Selector="&lt;html app='chrome.exe' title='1. Create &amp;amp; Update Node - Bulk | Anaplan' /&gt;" Url="https://us1a.app.anaplan.com/a/apps/app/b40dda58-9637-4a73-8654-249bb11cfe0d/boards/a5484b43-2c2c-4b34-bab2-4f4a5126bf8d" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

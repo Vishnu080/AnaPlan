@@ -1,0 +1,482 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="test" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="872.6666666666666,4540.666666666667" sap2010:WorkflowViewState.IdRef="test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="62">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="54">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="test" sap:VirtualizedContainerService.HintSize="882.6666666666666,4476" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="CreateBulkData_DT" />
+      <Variable x:TypeArguments="x:String" Name="BulkData_STR" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="820.6666666666666,54" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,192.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="338,82" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="C:\Users\vpokuru\OneDrive - Cisco\Documents\UiPath\AnaPlan_ProcessAutomation\AnaPlan_Excel_Inputs" />
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="820.6666666666666,54" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,247.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:CreateFile ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create File" sap:VirtualizedContainerService.HintSize="338,136.66666666666666" sap2010:WorkflowViewState.IdRef="CreateFile_1" Name="Add Nodes in Bulk Template.xlsx" Path="AnaPlan_Excel_Inputs" />
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="820.6666666666666,54" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,198.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ReadRange AddHeaders="True" DataTable="[CreateBulkData_DT]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="338,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Add or Update Nodes in Bulk Tem" WorkbookPath="C:\Users\vpokuru\OneDrive - Cisco\Documents\Anaplan_Inputs\Add Nodes in Bulk Template.xlsx">
+            <ui:ReadRange.Range>
+              <InArgument x:TypeArguments="x:String">
+                <Literal x:TypeArguments="x:String" Value="" />
+              </InArgument>
+            </ui:ReadRange.Range>
+          </ui:ReadRange>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="820.6666666666666,54" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,192.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:OutputDataTable DataTable="[CreateBulkData_DT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="338,82" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[BulkData_STR]" />
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="820.6666666666666,54" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,206.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,96" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[BulkData_STR]" />
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="820.6666666666666,3895.3333333333335" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="786.6666666666666,3808" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="724.6666666666666,3697.3333333333335" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="C:\Users\vpokuru\OneDrive - Cisco\Documents\Anaplan_Inputs\Add Nodes in Bulk Template.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="690.6666666666666,3416.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="628.6666666666666,3306" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(&quot;Add or Update Nodes in Bulk Tem&quot;).Range(&quot;A1:V4&quot;)]" SaveAfterEachRow="False">
+                      <ueab:ExcelForEachRowX.Body>
+                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                          </ActivityAction.Argument2>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="594.6666666666666,3116" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: 1. Create &amp; Update Node - Bulk | Anaplan" sap:VirtualizedContainerService.HintSize="532.6666666666666,3005.3333333333335" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="5987b66b-7ffd-4eab-b599-1ca3935a82b4" Version="V2" WindowResize="Maximize">
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="498.6666666666667,2786" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436.6666666666667,96" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;TYPE :&quot; + CurrentRow(&quot;Action Type&quot;).ToString]" />
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436.6666666666667,96" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;NodeName :&quot; + CurrentRow(&quot;NY Node Name.&quot;).ToString]" />
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436.6666666666667,96" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Pure Overlay :&quot; + CurrentRow(&quot;Pure Overlay&quot;).ToString]" />
+                                    <uix:NClick ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="436.6666666666667,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5987b66b-7ffd-4eab-b599-1ca3935a82b4" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://us1a.app.anaplan.com/a/springboard-ui/app/b40dda58-9637-4a73-8654-249bb11cfe0d/boards/a5484b43-2c2c-4b34-bab2-4f4a5126bf8d" DesignTimeRectangle="244, 632, 30, 24" DesignTimeScaleFactor="1.5" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-3' tag='DIV' /&gt;&lt;webctrl css-selector='div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' shadowhostid='anaplan-grid-component-3' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-3' tag='DIV' /&gt;&lt;webctrl type='' class='ric-grid-element__editor-trigger ric-grid-cell__editor-trigger--list' shadowhostid='anaplan-grid-component-3' tag='DIV' aaname='' /&gt;" Guid="b86495da-1922-409d-a887-f25b436530bb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAcCAYAAAAEN20fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACkSURBVEhL7dJRCkBAEMZxB3MAB3AHV5BDeHYPF/DsKFxBjT6lNGFnZqd4GPVPrXbnF4ph2ujLymYhXAE5CwgvILyA8JKQflxv1yVp9r5CumGmqm6P+93zt7R7RRAtxrIv+Wm0h1oQSPSzSg+3IpAIglJDchBIDEFPw3IRSAVBfKgHAqkh6DrcA4FMEOT1Js7MEASABwJlQTwLCC8gvIDwfgYh2gHlfSHVfAVUMgAAAABJRU5ErkJggg==" InformativeScreenshot="820d81c4216f40b3728097d6fecb765d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1. Create &amp;amp; Update Node - Bulk | Anaplan' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target DesignTimeRectangle="126, 626, 148, 34" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-3' tag='DIV' /&gt;&lt;webctrl css-selector='div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' shadowhostid='anaplan-grid-component-3' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-3' tag='DIV' /&gt;&lt;webctrl type='' shadowhostid='anaplan-grid-component-3' tag='DIV' class='ric-grid-cell--list ric-grid-cell--value-container' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJgAAAAmCAYAAAA4AlIkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEMSURBVHhe7dy/TcQwGIfhG4wBGICOAVgB0bABEt2NQM8C1AxyBREF3RVIRo6UE38CXHL+VX4iPYps6+teufRmN+zL2dULNHX/8FbqJzAiLm9fS21rM3cILYw32LTYPr1DMwIjSmBECYwogRElMKIERpTAiBIYUQIjSmBECYwogXXq7nGY3T/GklmBdehm+1zOL67H/9z5X5bOCqxDUyRLI1szJ7BOLY1lTVyVwDp2bDRr46oE1rn/4jklrkpg/BrRqXFVAmP0PaYWcVUC4+BzVC3iqgTGF61uronA+KGG1SKuSmBECYwogRElMKIERpTAiBIYUQIjSmBECYwogRF1CKy+pTlFBi3thn35AJ4fxBI2JFCiAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436.6666666666667,54" sap2010:WorkflowViewState.IdRef="CommentOut_11">
+                                      <ui:CommentOut.Body>
+                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,343.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,232.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_5" Text="[CurrentRow(&quot;Action Type&quot;).ToString]" Version="V3" />
+                                        </Sequence>
+                                      </ui:CommentOut.Body>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:CommentOut>
+                                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="436.6666666666667,92" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436.6666666666667,360" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+                                      <ui:CommentOut.Body>
+                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,280" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NSelectItem Item="{x:Null}" DisplayName="Select Item" sap:VirtualizedContainerService.HintSize="338,169.33333333333334" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Version="V3" />
+                                        </Sequence>
+                                      </ui:CommentOut.Body>
+                                    </ui:CommentOut>
+                                    <uix:NClick ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="436.6666666666667,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5987b66b-7ffd-4eab-b599-1ca3935a82b4" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://us1a.app.anaplan.com/a/springboard-ui/app/b40dda58-9637-4a73-8654-249bb11cfe0d/boards/a5484b43-2c2c-4b34-bab2-4f4a5126bf8d" DesignTimeRectangle="122, 705, 714, 48" DesignTimeScaleFactor="1.5" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl class='list-cell-editor__tree' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl class='list-cell-editor__tree' tag='DIV' type='' aaname='' /&gt;" Guid="f48b9b8c-e698-44d0-aa72-7cd80684a685" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAs4AAAA0CAYAAACaer56AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQCSURBVHhe7d3fa1dlHMDx/pgugoiIgn5dVQRBFggZ9mNkSRSSxaplWM3CEkoywYTQggqhopiQFyEEJRRkawmtiG6Cuohcm43ALde2pz7Hc9p33819P9u+A6PXCx7ke85zzrx88/Cccy7YdOXBEgMAAFio6WXhDAAASxDOAACQIJwBACBBOAMAQIJwBgCABOEMAAAJwhkAABKEMwAAJAhnAABIEM4AAJAgnAEAIEE4AwBAgnAGAIAE4QwAAAnCGQAAEoQzAAAkCGcAAEhYs3A+9tlgueiydeXCS24qh949Uh9d6P2Bo9Wc9nHxFbeWTQ9sLwMfflwmJibr2XMmJv8svdteXPTaq6+7ozzZv6cMDg2XmZnZ+goAAFi5NQnnM2emqnBtQrZn87YyPv5HfXa+Jpxv73m07N3/9r+jf+e+KoDj3A0331cGv/62vuKs1nB+4umX51374MPPVeEd57Y+9kIZHfu9vgoAAFZmTcL5+x9+LNdcf1e5/6EdVdReetX6MnTiu/rsfE04v/TKG/WRORHgcf7ya2+rxudfnKjPzA/n44Pf1Efn/DZ6qjzzT3zH+Tvv7SsjI2P1GQAAWL41Cec3Dx2ugjWiN6I2tmzs2n2gTE9P1zPmLBXOYXZ2tnxw+Gh1j9i60axcdwrncPr0ROnbvrua89rr71X3AgCAleh6OEfYxtaMG9dtLj/9/MuC3+06hXOIAN7Su7OK59g7HTLhHJrV7/Ubt5aTI6P1UQAAWJ6uh3PzUGDrCnM8HBiBu9hDgplwDs28Pfveqn5nw7mZF/+n9n3SAACQ1dVwbh4KjEhtjdlm1XexhwSz4Rz3i3kRwRHD2XAOce+YF38LAABWoqvhfK5Abg3qZqtFQzgDAPBf0LVwjgfv9h94pwrUxbZkfHLseHXuqWf3lqmpv+qjy9+q0czLhvNyAhsAAM6la+E8dmq8bLi7twrU9vcqx9jx/KvVa+naHxLMhHPzcGDMiwAP2SBuVsFv2bCl/HrSw4EAAKxM18K59UuBnUbrinSncPY6OgAAzgddCefWLwUe+ejT+uhC8RGUWHVu3QO9VDj7AAoAAOeLroRz9l3Ji72PuQnnTp/c/vKr4Xkrxq3h3OmT297fDADAaq06nFsfCox/O22HiBXpmBsr1M2KcvxuHxG+G+95vNqmMTExWV89pzWc20cE9yN9u8rg0HCZmbE9AwCA1Vt1OAMAwP+BcAYAgAThDAAACcIZAAAShDMAACQIZwAASBDOAACQIJwBACBBOAMAQIJwBgCABOEMAAAJwhkAABKEMwAAJAhnAABIEM4AAJAgnAEAIEE4AwBAgnAGAIAE4QwAAAkLwrm/Z8AwDMMwDMMwjLZxtpcPlr8Bj2nWqY4rVocAAAAASUVORK5CYII=" InformativeScreenshot="a1735c812c96b17e199d31a25cd97c02.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1. Create &amp;amp; Update Node - Bulk | Anaplan' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target DesignTimeRectangle="122, 663, 654, 42" ElementType="InputBox" FriendlyName="'ADD'" FullSelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='text' class='list-cell-editor__input' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAApIAAAAuCAYAAACbH/lBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAUzSURBVHhe7d3ri1VVHAbg/pg+BBEhBWV90IrKsqy0KItkSkXTyi6IYlpIdL8hUXSlgsKyGxFhF+1CFwrpYpGTNEWWZYVl2TTOlLnqt2evmTMzZ6az95wvwzwPvHBm77X2zAeRl73O2vuge1dvTo1Zt3LTkJ9F2hH/rkRkosT/VyKt56COox5MIiIiIiJVo0iKiIiISK0MFMm+3r9FRERERP43O7bvLjJQJAEAoApFEgCAWhRJAABqUSQBAKhFkQQAoJZJXSRPP2dJEQAAqpvURfLgw2YUAQCgOkVSkQQAqEWRVCQBAGpRJBVJAIBaFElFEgCglrYWyQMHDqR7Hlg/UNBe3Phmeaa5D7Z8OjB2eI449ux00aJr0muvv5f29faVM0a69a6Hm86PTJ/RkVavXZc6v/gq/fPPgXLGoDwOAIDq2lokf/p5dzrrvMsGCtqy5Temnp595dmRcpGM0hjzZs9dNpAogfk6U4+bmza/+X5RVIfLRTLGN86P68V18zUunL8ifbdzVzmrXz4HAEB1bS2Sb72zJR0y5bR02dU3pI5Fq9KUqXPS1s+2l2dHykVy8eVrU3d3T3m0X5TGH3b9nG5f90g69MhZxXUff/LFEWUyF8lHH3++PDJo//79//3+L9KCpdcWY6adPC993tlVnlUkAQDGo21Fsq/vr7Ty2juLwrfx1beL0hcl7eY7Hmx6JzGMVSSzmBvL23F3MYrpR59sK8/0G6tIZrE0fvMdDxXj5i1YmX77bW9xPH6OAABQXduKZOf2r9Mxx1+Qzp13VbHEvePbH9KJp81PJ5+xMO38/sdy1FCtFMkQZfKxJ14oxl654pbUs6+3PNNakQx7/+hOlyxbW4x9+rlXimPxOQIAQHVtKZJR9PImm1iKjiXlfIcyjj35zMZy5FCtFsmQi2ksT3d99W15tPUiGWLzT4zNZTQ+RwAAqK4tRTJvsok7ko1Lz2+89cGYRbFKkezt7UvLV91WjI/rZlWK5Nff7EzHn3pR8X7tH3/aXcyLAABQXVuKZC6MCy+9Lu3Z83t5dLBgjrbppkqRDM1KY5Ui+et/f9uc85elo6adV2y6iXkRAACqG3eRbFzC3vDsy0M21sTnWOqOc8023SiSAAAT17iLZN5kM/y7i9mHH3+eDj/6rKabbuoubccu7qzO0vbM2YuLRwspkgAA9Y2rSDZusllz/d3F3cnhoiBGUYwxwzfd2GwDADBxjatIDn+Tzf8lHlL++97ucnbrRTIK630PPVWMvWL5TenPPwfHtlok49mR8ftjbF6Cj88RAACqG1eRzHf4mr3isDGzzllavJ0mxkZ5zFopklH48gPJYwl9y4eflWf6tVIkGx9IvmDJmrT7lz3F8fg5AgBAdbWLZOMmm/zsyNE0jm3cdDNWkYwx8T3GW+58uHhbThTR9RteGvF7xiqS+RWJ+U7kKWcuGrJ7PI5FAACornaRzJtshj87cjT5PdyNm25ykYySGHctG+9iTp/RMVD0Tph5cXFXsllZzUVy6nFzh8yPO6RxFzNfI95q82XXjnJWv3wOAIDqahfJvMlm+HcWRxPfUbxw/opiTt50k4tks0QxXHLl9emVTe8WrzccTS6SzXLSrIXphlvvTx9v7WxaQvM4AACqG9d3JCc6RRIAoD5FUpEEAKhFkVQkAQBqUSQVSQCAWhRJRRIAoBZFUpEEAKhFkVQkAQBqmdRFcltnVxEAAKqb1EUSAID6FEkAAGpRJAEAqEWRBACgFkUSAIBaFEkAAGpRJAEAqCGlfwGvb0nqhTZpkwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="436.6666666666667,240.66666666666666" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+                                      <uix:NMouseScroll.SearchedElement>
+                                        <uix:SearchedElement>
+                                          <uix:SearchedElement.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://us1a.app.anaplan.com/a/springboard-ui/app/b40dda58-9637-4a73-8654-249bb11cfe0d/boards/a5484b43-2c2c-4b34-bab2-4f4a5126bf8d" DesignTimeRectangle="278, 618, 296, 23" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'NY Node Name.'" FullSelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-2' tag='DIV' /&gt;&lt;webctrl aaname='NY Node Name.' shadowhostid='anaplan-grid-component-2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-2' tag='DIV' /&gt;&lt;webctrl aaname='NY Node Name.' shadowhostid='anaplan-grid-component-2' tag='SPAN' type='' class='ric-grid-label__content ric-grid-column-label__content' check:innerText='NY Node Name.' /&gt;" Guid="325a907e-7e83-4c75-ad1e-e8b56bb862f3" ImageBase64="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" InformativeScreenshot="fcb8149cb54ddf367cbde06e0380e3ac.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1. Create &amp;amp; Update Node - Bulk | Anaplan' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+                                          </uix:SearchedElement.Target>
+                                          <uix:SearchedElement.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:SearchedElement.Timeout>
+                                        </uix:SearchedElement>
+                                      </uix:NMouseScroll.SearchedElement>
+                                    </uix:NMouseScroll>
+                                    <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'NY Node Name.'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="5987b66b-7ffd-4eab-b599-1ca3935a82b4" Text="[CurrentRow(&quot;NY Node Name.&quot;).ToString]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://us1a.app.anaplan.com/a/springboard-ui/app/b40dda58-9637-4a73-8654-249bb11cfe0d/boards/a5484b43-2c2c-4b34-bab2-4f4a5126bf8d" DesignTimeRectangle="277, 674, 298, 34" DesignTimeScaleFactor="1.5" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-2' tag='DIV' /&gt;&lt;webctrl css-selector='div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='4' shadowhostid='anaplan-grid-component-2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-2' tag='DIV' /&gt;&lt;webctrl type='' class='ric-grid-cell--text ric-grid-cell--value-container' shadowhostid='anaplan-grid-component-2' tag='DIV' aaname='' /&gt;" Guid="21cc5d5a-6cb0-436d-8ace-691f6316637b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAS4AAAAmCAYAAAB6ZHaaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACsSURBVHhe7daxCcBADATB779QJ27AmczzOHAJCzNwgRpYtK77GTOz0tYABOxgfYQLSBAuIEe4gBzhAnKEC8gRLiBHuIAc4QJyhAvIES4gR7iAHOECcoQLyBEuIEe4gBzhAnKEC8gRLiBHuIAc4QJyhAvIES4gR7iAHOECcoQLyBEuIEe4gBzhAnKEC8gRLiBHuIAc4QJyhAvIES4g5xeufZiZlebjAhJ2sI6ZF7w5JR+VbGvhAAAAAElFTkSuQmCC" InformativeScreenshot="09baf4f343ec8facfe5f54562228aaa9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1. Create &amp;amp; Update Node - Bulk | Anaplan' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target DesignTimeRectangle="278, 618, 296, 23" ElementType="Text" FriendlyName="'NY Node Name.'" FullSelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-2' tag='DIV' /&gt;&lt;webctrl aaname='NY Node Name.' shadowhostid='anaplan-grid-component-2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-2' tag='DIV' /&gt;&lt;webctrl aaname='NY Node Name.' shadowhostid='anaplan-grid-component-2' tag='SPAN' type='' class='ric-grid-label__content ric-grid-column-label__content' check:innerText='NY Node Name.' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="338,54" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                                      <ui:CommentOut.Body>
+                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,333.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Node for Update'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="5987b66b-7ffd-4eab-b599-1ca3935a82b4" Text="[CurrentRow(&quot;Node for Update&quot;).ToString]" Version="V3">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://us1a.app.anaplan.com/a/springboard-ui/app/b40dda58-9637-4a73-8654-249bb11cfe0d/boards/a5484b43-2c2c-4b34-bab2-4f4a5126bf8d" DesignTimeRectangle="576, 673, 298, 34" DesignTimeScaleFactor="1.5" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-2' tag='DIV' /&gt;&lt;webctrl css-selector='div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='6' shadowhostid='anaplan-grid-component-2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-2' tag='DIV' /&gt;&lt;webctrl type='' class='ric-grid-cell--list ric-grid-cell--value-container' shadowhostid='anaplan-grid-component-2' tag='DIV' aaname='' /&gt;" Guid="f2357761-87dd-47b1-a1c8-4c68938b7cfe" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAS4AAAAmCAYAAAB6ZHaaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEhSURBVHhe7dbBSUNBFIVhC7MAC3BnAbbgLjXYhTW4sQHrCJKg4Mq4kJErBoMSdF7mSQ58HxzebO72550s15t2erkyMzv6Xd88tyJcZhazi8Vjq2YJl5lF7eX17StcAMdOuIA4wgXEES4gjnABcYQLiCNcQBzhAuIIFxBHuIA4wgXEES4gjnABwzysnj5f/XpuhQsY4vbuvp2dX318e/XeChcwxDY+vfGacidcwDC9EZoSrSJcwFB/jdHUaBXhAob7LUqHRKsIFzCLfXE6NFpFuIDZfI/UiGgV4QJmtRurEdEqwgXMbtSf1pZwAf+igjUiWkW4gDjCBcQRLiCOcAFxhAuII1xAHOEC4ggXEEe4gDjCBcQRLiDOj3CZmSVsud60d+E9KHM8qA35AAAAAElFTkSuQmCC" InformativeScreenshot="1fa682b14a4c28d1cc0b38acee1f6558.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1. Create &amp;amp; Update Node - Bulk | Anaplan' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target DesignTimeRectangle="578, 618, 296, 23" ElementType="Text" FriendlyName="'Node for Update'" FullSelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-2' tag='DIV' /&gt;&lt;webctrl aaname='Node for Update' shadowhostid='anaplan-grid-component-2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-2' tag='DIV' /&gt;&lt;webctrl aaname='Node for Update' shadowhostid='anaplan-grid-component-2' tag='SPAN' type='' class='ric-grid-label__content ric-grid-column-label__content' check:innerText='Node for Update' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                          </uix:NTypeInto>
+                                        </Sequence>
+                                      </ui:CommentOut.Body>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:CommentOut>
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="338,54" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+                                      <ui:CommentOut.Body>
+                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,202.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                                        </Sequence>
+                                      </ui:CommentOut.Body>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:CommentOut>
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="338,54" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                                      <ui:CommentOut.Body>
+                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,333.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'NY Node Renamed'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="5987b66b-7ffd-4eab-b599-1ca3935a82b4" Text="[CurrentRow(&quot;NY Node Renamed&quot;).ToString]" Version="V3">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://us1a.app.anaplan.com/a/springboard-ui/app/b40dda58-9637-4a73-8654-249bb11cfe0d/boards/a5484b43-2c2c-4b34-bab2-4f4a5126bf8d" DesignTimeRectangle="877, 674, 148, 34" DesignTimeScaleFactor="1.5" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-2' tag='DIV' /&gt;&lt;webctrl css-selector='div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='9' shadowhostid='anaplan-grid-component-2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-2' tag='DIV' /&gt;&lt;webctrl type='' class='ric-grid-cell--text ric-grid-cell--value-container' shadowhostid='anaplan-grid-component-2' tag='DIV' aaname='' /&gt;" Guid="4c67cc99-f0f5-4a59-a408-f306c2cec925" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJgAAAAmCAYAAAA4AlIkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACjSURBVHhe7dSxDQJBDADBL4x+qIcuqIwAIiIgQIfuEQH5bTaWRpbzlbfL7TlgtcPxutser/eAlQRG6hfYHIGxnMBICYyUwEgJjJTASAmMlMBICYyUwEgJjJTASAmMlMBICYyUwEgJjJTASAmMlMBICYyUwEgJjJTASAmMlMBICYyUwEgJjJTASAmMlMBICYzUX2DzgNVO5/u+fTCWm2F9P9gYH2QpHlIZaHSzAAAAAElFTkSuQmCC" InformativeScreenshot="9738507e254da897fd3d5ff5e5bf5fc2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1. Create &amp;amp; Update Node - Bulk | Anaplan' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target DesignTimeRectangle="878, 606, 146, 47" ElementType="Text" FriendlyName="'NY Node Renamed'" FullSelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-2' tag='DIV' /&gt;&lt;webctrl aaname='NY Node Renamed' shadowhostid='anaplan-grid-component-2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-2' tag='DIV' /&gt;&lt;webctrl aaname='NY Node Renamed' shadowhostid='anaplan-grid-component-2' tag='SPAN' type='' class='ric-grid-label__content ric-grid-column-label__content' check:innerText='NY Node Renamed' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                          </uix:NTypeInto>
+                                        </Sequence>
+                                      </ui:CommentOut.Body>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:CommentOut>
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="338,54" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+                                      <ui:CommentOut.Body>
+                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,202.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                                        </Sequence>
+                                      </ui:CommentOut.Body>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:CommentOut>
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="338,54" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+                                      <ui:CommentOut.Body>
+                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,333.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Pure Overlay'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="5987b66b-7ffd-4eab-b599-1ca3935a82b4" Text="[CurrentRow(&quot;Pure Overlay&quot;).ToString]" Version="V3">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://us1a.app.anaplan.com/a/springboard-ui/app/b40dda58-9637-4a73-8654-249bb11cfe0d/boards/a5484b43-2c2c-4b34-bab2-4f4a5126bf8d" DesignTimeRectangle="1026, 673, 181, 34" DesignTimeScaleFactor="1.5" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-2' tag='DIV' /&gt;&lt;webctrl css-selector='div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='11' shadowhostid='anaplan-grid-component-2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-2' tag='DIV' /&gt;&lt;webctrl type='' class='ric-grid-cell--list ric-grid-cell--value-container' shadowhostid='anaplan-grid-component-2' tag='DIV' aaname='' /&gt;" Guid="8fdc4c59-947f-4e11-81ed-7fb5a43b0fdf" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALkAAAAmCAYAAACYnTrKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAClSURBVHhe7d2xDYNAEEVBF0Y/rsddUBmBiZxddshYWKKFpxnpd/C06T62fczl+Z5Qc3X9j9ysuG/fIrf0bpccakROnsjJEzl5IidP5OSJnDyRkydy8kROnsjJEzl5IidP5OSJnDyRkydy8kROnsjJEzl5IidP5OSJnDyRkydy8kROnsjJEzl5IidP5OSJnDyRkydy8kRO3i3y1/o5f6uYlfbreswDmg7PFcc438sAAAAASUVORK5CYII=" InformativeScreenshot="fe935b4db38defa2c1471153c17d1365.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1. Create &amp;amp; Update Node - Bulk | Anaplan' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target DesignTimeRectangle="1028, 618, 180, 23" ElementType="Text" FriendlyName="'Pure Overlay'" FullSelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-2' tag='DIV' /&gt;&lt;webctrl aaname='Pure Overlay' shadowhostid='anaplan-grid-component-2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl name='{&amp;quot;appShellConfig&amp;quot;:{&amp;quot;SHELL_CONTEXT_ROOT&amp;quot;:&amp;quot;/&amp;quot;,&amp;quot;APP_OUTER_CONTEXT_R*' tag='IFRAME' /&gt;&lt;webctrl id='anaplan-grid-component-2' tag='DIV' /&gt;&lt;webctrl aaname='Pure Overlay' shadowhostid='anaplan-grid-component-2' tag='SPAN' type='' class='ric-grid-label__content ric-grid-column-label__content' check:innerText='Pure Overlay' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALgAAAAbCAYAAADPu0WHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAX2SURBVHhe7ZqLU1VFHMf7w/oDmqapaWwsx9EeajLmoxg0xjQxAzVESFFRfAApGOngC5/4qPCBj7QUQRFRFDUwQEBegr/uZ+/d497DuRiX9J57Zj8zO9zz2z37/O7ub/fwhlgsAePNma2RXyJW4JbAYQVuCTRW4JZAYwVuCTRW4JZAYwVuCTS+FfjaTRXy1gfpnuGz2dlyqOq8DAw+i6T2Jy0PH8vGogOqvm9PXCgTpmbI1xmF8vvZqwmve1//gCzO2qb6k74OKkkpcB3yNuyWZ0NDkTf8A+ItKj2iRO1Vb8L0uTnS2PQg8sbrxwo8wWiBvz9lieypPC3nLlxX4cCRszJpeqaKe3fSIrlytTHyhj9gwhVs3e8ImVWb5zM1tXLk+AWZl77OiZs8I0tu3W6JvPl6sQJPMFrgEz9dNmKlQ9SIm/gt2w8pG5OA5xnzcqS9s1vZgHfJg7iLl28oG3913rX1d2THL1WSkprrlPP8+XO5fuOupC8tlHc+/EYFfmMjbjT+qr0t701erPKflfajPGptj8SE4f2Kympndc9aXapW/MMh8fOM6JvvvxgUuBCqL+nNCU0+Z87Xyhfz16g4yszM2SH3H7SpeHCLuL6hWbVj3ea9MQVOvpf+vCkLl21Rk5O8P/9ydZRLqPvfa4Ex+5s2JZqkFHi4E7+LGpx4BM4AfTTt+6hyGOD9h88qUWM3AyI6d7FO5eEF7+YX7lFpvQZfg1CWZf+k0ulyEeaUmcuVjbZohoaGJXf9LmWfm54vXd1P1S6xKeTbe7lA5q5giphy9MSjz7wEPjw8LIUllU5e7sBORNmdT3pk9oI1ykZ7abdGjwNtMSdbokg6gff29ktewW6n04+dvKTs8QicwCrFLsAq2dPT56RHPGW7T0h//6AS5M8VJ5Vt2pxV8ndbh8rHTc/TPkn7dqPKV4sxFtRb14FDpylkhIcAgbIoE3t5xSllq7lUpyYQgq369Q8lOrNfOMg+DT2bIiakLtogJ367LA2NLTFXcCblnAVr1U6EcLt7ep18TdGW7jqubKzu7R1dykaZlI2dttCmRJPUh0xWkX/aw50bj8Dx72vr7iibRg8cQkWwGnPwEKQXlEv5pDFF6oU5yfSKfbrmmppEEz7OkJu37nnaEE322nL1Hn9NEenJQLvqbzZHiXhl3s6oA3ksgSNqMx2E+zC8Y+o+pC7UibpRx1i2RJO0Ak9JzZOmu48iqeP3wYnXDIZWavxY4mZ+lau2ZDNgI077/W7Gs4KDufWzWptixqVhJyFP8saWtrggqn64C1NTVqg48o8lYogV9+DRY9UH7A6ERZnb5FT1lRF9aL6vV2vqzDNtoC1+wPcCd9+iENgmTb8P/g+Bm4M2WnCLRTMeH1zD5MHORLnRcM/xy7UrZu4SowX6Y6wCf9LV49zy4Lqtyi+X5bllju9O0H0I+mDMrnH7zkNncm8uOThifBJFUh4yvdACp7O12wJhgUdvr7EEDuu37FNx2o8dK/Heomj0Ns/ERmCkMf1+zgRLVhQr+8v83LEK/Gqo7kxM9+TEjaM+pDUFbh6MuZkhjele+YHACJz7cdIjnJKdx6TtcacaJFwZ7ObgjCZwLVDyKSyuVIcsYMutOFD90rrgv+Iu6DLHeg9u+vo6uIV89ORFVT/qyWRB9Eyc1lCbORjTdnjVAqdO+mCsQ7wLw6siMALXK5/Z2QSuARkwfv8XgSOUvQdPOyusOyz9oUQGBgYjqb1hRR7Pl0y99RPcYgP3JHIH7SKMVeBM5vkRN4PJg3uyZHmRcx+O3RQ46Dt64gh+uPs2CYzAGVA+fPB/H7zH6ri9vEqu1TWpPMzBGU3gQF7mhx7SfjJrpRSXHY3y719GvP+LYm79sQ6rur36Qw+BKzsmJ1eGMFaBQ0eofRu27lN1ZXHATWL3cfehxjwYe32kSjS+FbglOTAPzH65+zaxArfEBX4/H3i43dFnFr/cfZtYgVviQh9IWbkJ3Oz46XCpsQK3xAXnCISNn47Pju/uR6zALYHGCtwSaKzALYHmhcBF/gX97vjhIcFcLQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                          </uix:NTypeInto>
+                                        </Sequence>
+                                      </ui:CommentOut.Body>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:CommentOut>
+                                  </Sequence>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIVSURBVFhH7ZYxSFVhFMefEb7iQaCDLWGhEARCUINTaETg1tKoSILg1uKUQ0FQ4eJSS0jgGoRKtLi1tRRouLS0RFCiCEUYpPX7Xv/v63Y897537dLkH37w3vl+5xx49737bu0wZdLom3wFPwtYllp9GH7RLPO4Ir36MHzBLLOsQ4f0asPgHviuRXlMSa8+DL9lllm2oCG92jD4KHzQojxmpadQ69fLfwuDrmcWeezCGenN8L4DVuGkSgcPQ16CtziyKDWF2lWd3VHpYGHAeQ0q4rL0FGpLOvsMdZXLh+bHGpTHW6kp1HohXJboTOioXGjshm+ZQR6T0lOo3TfOmo7KhcZpM8iyCcelN8P7OoSP3brl7pA0HIH3mQEeD6SnUBs1TuS5lPZCwzUzwPIDeqWnUMv7s9qDs9JaB3kl0+zxTGoKtQvGsTyUWhzEc6bRY0h6CrUnxrF8hS7p+UF6lGnyWJX6V6gPwnALuqX7QTgBX8BbHLkhvfow/KZZZtmAY9KrDYPDH8g7LcrjnvTqw/ARs8wSfnqnpLvh/DSEZ4PtFgyo5U8ovgBvceSp1MLgLZs+j3npv0OhH8LNwpMjl6QXBi98273+LDvQo5Zm01zm0OO11LaC/8b0e9yOcgPCdfGkyHhTbjP4Y6bf4xPUgzyVKXqUfqjA74SP6i9iIsjhed47jNzV3FKhb8bM8dj3QHOY/5xa7Remrz12jj3pzgAAAABJRU5ErkJggg==" InformativeScreenshot="4e10a1905bdb8b3e9b081dd12baa6de7.jpg" Selector="&lt;html app='chrome.exe' title='1. Create &amp;amp; Update Node - Bulk | Anaplan' /&gt;" Url="https://us1a.app.anaplan.com/a/apps/app/b40dda58-9637-4a73-8654-249bb11cfe0d/boards/a5484b43-2c2c-4b34-bab2-4f4a5126bf8d" />
+                              </uix:NApplicationCard.TargetApp>
+                            </uix:NApplicationCard>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelForEachRowX.Body>
+                    </ueab:ExcelForEachRowX>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
